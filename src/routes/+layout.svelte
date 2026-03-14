@@ -1,9 +1,18 @@
-<script lang="ts">
-	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
-
+<script>
+	import "../lib/fonts.css";
 	let { children } = $props();
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<style>
+	nav {
+		background: orange;
+		overflow: hidden;
+	}
+</style>
+
+
+<nav>
+		<p>FriendShip</p>
+</nav>
+
 {@render children()}
