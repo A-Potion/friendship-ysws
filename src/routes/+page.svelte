@@ -1,70 +1,63 @@
 <script lang="ts">
+    import sun from '$lib/images/sun.png';
+    import orpheus from '$lib/images/flag-orpheus-top.png'
     import Rsvp from  "../lib/assets/Rsvp.svelte"
 </script>
 
 <style>
-    :global(body) {
-        margin: 0;
-        padding: 0;
-        background: white;
-    }
 
-    .land {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+.orpheus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 
-    .landing {
-        height: 100vh;
-        position: relative;
-        overflow: hidden;
-    }
+.content {
+    display: flex;
+    flex-direction: row;
+}
 
-    .landing::before {
-        content: '';
-        background: url('/src/lib/images/step-team.webp');
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        filter: brightness(60%);
-        background-size: cover;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        overflow: hidden;
-    }
+.land {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+     margin: 0;
+    height: 100%;
+    background-color: #52CFEB;
+}
 
-    .intro {
-        display: flex;
-        justify-content: column;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        color: white;
-        z-index: 1;
-        font-family: 'Archivo Variable';
-    }
-    .ti {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 1.5rem;
-    }
+.summer {
+    flex: 1;
+}
+.sun {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+img.sun {
+    width: 30%;
+    height: auto;
+    
+}
+    
 </style>
 
 <div class='land'>
-<div class='landing'>
-
-<div class='intro'>
-
-<h1 style="color: yellow; font-size: 4rem; margin: mt-40;">Summer at home?</h1>  <!-- Will be a slider! --> 
-<p class="ti" >join one of our free summer coding clubs near you,</p>
-<p class="ti">or host your own, with friends!</p>
-
-<Rsvp />
-
+<div class='orpheus'>
+    <img alt="Hack Club logo" src={orpheus} />
 </div>
-
+<div class='content'>
+<div class='summer'>
+<p>
+    Hello, world!
+</p>
 </div>
-<h1>meow</h1>
+<div class='sun'>
+<img alt="Sun." src={sun} class='sun' />
+</div>
+</div>
 </div>
