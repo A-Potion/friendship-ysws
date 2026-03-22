@@ -10,32 +10,35 @@ function LetsRsvp() {
 
 <style>
     .container {
-        display: flex;
+        display: inline-flex;
         gap: 6px;
         align-items: center;
     }
 
     input {
         border-radius: 16px;
+        background: #D9D9D9;
         padding: 12px 16px;
-        font-size: clamp(16px, 3vw, 25px);
-        width: clamp(200px, calc(100vw - 120px), 320px);
-        border: 1px solid #ccc;
+        font-size: clamp(2vw, 6vw, 2vw);
+        width: clamp(26vw, calc(100vw - 120px), 22vw);
+        border: 1px solid #D9D9D9;
+        align-items: center;
+        box-shadow: 0.2vh 0.2vh 0.5vh black;
     }
 
     button {
-        width: clamp(45px, 10vw, 55px);
-        height: clamp(45px, 10vw, 55px);
+        width: clamp(45px, 15vw, 4vw);
+        height: clamp(40px, 15vw, 4vw);
         border-radius: 70%;
-        background: white;
-        border: 2px solid #333;
+        background: #D9D9D9;
+        border: 0px solid #333;
         font-size: clamp(18px, 2.5vw, 24px);
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        transition: all 0.3s ease-in-out;
+        box-shadow: 0.2vh 0.2vh 0.5vh black;
     }
 
     @media (max-width: 480px) {
@@ -47,13 +50,10 @@ function LetsRsvp() {
             width: 100%;
         }
     }
-    button:hover {
-        transform: scale(1.08)
-    }
 </style>
 
 
 <div class="container">
-    <input bind:value={email} placeholder="you@hackclub.com">
+    <input bind:value={email} placeholder="email">
     <button onclick={LetsRsvp}>→</button>
 </div>
