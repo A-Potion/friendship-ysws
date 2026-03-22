@@ -4,6 +4,7 @@
     import Rsvp from  "$lib/assets/Rsvp.svelte"
     import How from "$lib/assets/How.svelte"
     import Faq from "$lib/assets/Faq.svelte"
+    import Footer from "$lib/assets/Footer.svelte"
 
     import { onMount } from 'svelte';
 
@@ -32,6 +33,20 @@ p {
 
 .main {
     background-color: #52CFEB;
+    margin-bottom: 0;
+}
+
+@keyframes bounceIn {
+	0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+	40% {
+    transform: translateY(-30px) rotate(45deg);
+  }
+	60% {
+    transform: translateY(-15px) rotate(45deg);
+  }
 }
 
 .arrow {
@@ -39,6 +54,7 @@ p {
   border-width: 0 1vw 1vw 0;
   display: inline-block;
   padding: 3.5vh;
+  animation: bounceIn 2s infinite 2s;
 }
 
 .down {
@@ -151,6 +167,10 @@ p {
     font-weight: 100;
     margin-bottom: 1vh;
 }
+
+#footer {
+    background-color: orange;
+}
     
 </style>
 
@@ -194,6 +214,10 @@ p {
 
 <div id="faq_section">
     <Faq />
+</div>
+
+<div id="footer">
+    <Footer />
 </div>
 
 </div>

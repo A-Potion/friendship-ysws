@@ -11,12 +11,16 @@
          script.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
          script.crossOrigin = 'anonymous';
          script.onload = () => {
-             const map = window.L.map('map').setView([35.9045, -79.0469], 5);
+             const map = window.L.map('map').setView([35.9045, -79.0469], 3);
 
              window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
                  maxZoom: 19,
                  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
              }).addTo(map);
+
+             var marker = window.L.marker([44.3805857546044, -73.22711686359293]).addTo(map);
+             marker.bindPopup("<b>Sunshine @ HQ!</b><br>Happening Mondays at noon.");
+
          };
          document.head.appendChild(script);
      });

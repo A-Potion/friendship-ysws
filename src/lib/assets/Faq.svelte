@@ -51,7 +51,7 @@
         align-items: center;
         flex-direction: column;
         width: 70vw;
-        text-align: justify;
+        text-align: center;
     }
 
     .q {
@@ -98,6 +98,10 @@
     font-weight: 100;
     margin-bottom: 2vh;
     }
+
+    #listspecial {
+        text-align: justify;
+    }
 </style>
 
 <div id='section'>
@@ -130,13 +134,17 @@
             </div>
             <div class='a'>
                 <p>Host one yourself! It's really easy & super rewarding:<br></p>
-                    <ol>
-                        <li>Pick a time (challenges are dropped on Mondays at 9AM EST, why not meet then?)</li>
-                        <li>Find a public place to meet in for at least 3 hours. Think, a café, a library, a community center.</li>
-                        <li>Spread the word — put up posters, invite friends, post on Facebook</li>
-                        <li>Get some food for the club — we'll send you $8.50 for each person that shows up!</li>
-                        <li>Enjoy! Lock-in with your club & work on challenges in teams!</li>
-                    </ol>
+                    <div id="listspecial">
+                    <p>
+                    
+                        1. Pick a time (challenges are dropped on Mondays at 9AM EST, why not meet then?)<br>
+                        2. Find a public place to meet in for at least 3 hours. Think, a café, a library, a community center.<br>
+                        3. Spread the word — put up posters, invite friends, post on Facebook<br>
+                        4. Get some food for the club — we'll send you $8.50 for each person that shows up!<br>
+                        5. Enjoy! Lock-in with your club & work on challenges in teams!<br>
+                        </p>
+                        </div>
+                
             </div>
         </div>
         <div class='faq'>

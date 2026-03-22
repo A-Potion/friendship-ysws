@@ -32,9 +32,9 @@ function LetsRsvp() {
         border-radius: 16px;
         background: #D9D9D9;
         border: 0px solid #333;
-        font-size: clamp(18px, 2.5vw, 24px);
+        font-size: clamp(1vw, 2.6vw, 1.7vw);
         cursor: pointer;
-        font-weight: 530;
+        font-weight: 630;
         display: flex;
         align-items: center;
         justify-content: center;
