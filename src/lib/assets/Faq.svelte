@@ -124,7 +124,7 @@
             </div>
             <div class='a'>
                 <p>For every hour you spend coding you get 4 Suns.<br/>
-                    Meet weekly to hack on weekly challenges = get a 1.25+ Sun multiplier for solving all of them.<br>
+                    Meet weekly to hack on weekly challenges = get a 1.25x Sun multiplier for solving all of them.<br>
                 Then, you can exchange the Suns for prizes in our shop. Prizes like, custom varsity jackets for your team, Raspberry Pis, or 3D printers!</p>
             </div>
         </div>
