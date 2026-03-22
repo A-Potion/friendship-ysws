@@ -1,7 +1,7 @@
 <script lang="ts">
-    import deven from "$lib/images/talk.png";
-    import codetogether from "$lib/images/code.jpg";
-    import prizes from "$lib/images/prizes.jpg";
+    import deven from "$lib/images/talk.webp";
+    import codetogether from "$lib/images/code.webp";
+    import prizes from "$lib/images/prizes.webp";
 </script>
 
 <style>
@@ -16,7 +16,7 @@
 
 #how h1 {
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 8vh;
+    font-size: 4.8vw;
     font-weight: 100;
     margin-bottom: 2vh;
 }

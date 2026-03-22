@@ -17,7 +17,7 @@ onMount(() => {
 
 .top h1 {
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 12vh;
+    font-size: 6.18vw;
     font-weight: 100;
     margin-bottom: 0;
 }
@@ -27,7 +27,7 @@ p {
     margin-left: 0.4vw;
     font-family: 'Hammersmith One', sans-serif;
     font-weight: 100;
-    font-size: 3.85vh;
+    font-size: 2vw;
 }
 
 .main {
