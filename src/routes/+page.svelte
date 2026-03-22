@@ -147,7 +147,7 @@ p {
 .map h2 {
     margin-top: 2vh;
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 6vh;
+    font-size: 4.8vw;
     font-weight: 100;
     margin-bottom: 1vh;
 }
