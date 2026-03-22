@@ -1,12 +1,21 @@
 <script lang="ts">
     import sun from '$lib/images/sun.png';
     import hc_logo from '$lib/images/flag-orpheus-top.png'
-    import Rsvp from  "../lib/assets/Rsvp.svelte"
+    import Rsvp from  "$lib/assets/Rsvp.svelte"
+    import How from "$lib/assets/How.svelte"
+    import Faq from "$lib/assets/Faq.svelte"
+
+    import { onMount } from 'svelte';
+
+onMount(() => {
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+});
 </script>
 
 <style>
 
-h1 {
+.top h1 {
     font-family: 'Hammersmith One', sans-serif;
     font-size: 12vh;
     font-weight: 100;
@@ -117,6 +126,31 @@ p {
     justify-content: center;
    
 }
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh 0;
+    background-color: #f5f5f5;
+}
+
+.map iframe {
+    width: 70vw;
+    height: 40vh;
+    border: none;
+    border-radius: 1vh;
+    margin-bottom: 4vh;
+}
+
+.map h2 {
+    margin-top: 2vh;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 6vh;
+    font-weight: 100;
+    margin-bottom: 1vh;
+}
     
 </style>
 
@@ -150,7 +184,16 @@ p {
 </div>
 
 </div>
-<div class='how'>
-    <p>meow</p>
+<div class='map'>
+    <h2>Find a Sunshine close to you</h2>
+    <iframe src="/map" title="Map"></iframe>
 </div>
+<div id="how_section">
+<How />
+</div>
+
+<div id="faq_section">
+    <Faq />
+</div>
+
 </div>

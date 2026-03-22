@@ -11,7 +11,7 @@ function LetsRsvp() {
 <style>
     .container {
         display: inline-flex;
-        gap: 6px;
+        gap: 0.7vw;
         align-items: center;
     }
 
@@ -27,13 +27,14 @@ function LetsRsvp() {
     }
 
     button {
-        width: clamp(45px, 15vw, 4vw);
+        width: clamp(45px, 18vw, 8vw);
         height: clamp(40px, 15vw, 4vw);
-        border-radius: 70%;
+        border-radius: 16px;
         background: #D9D9D9;
         border: 0px solid #333;
         font-size: clamp(18px, 2.5vw, 24px);
         cursor: pointer;
+        font-weight: 530;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -55,5 +56,5 @@ function LetsRsvp() {
 
 <div class="container">
     <input bind:value={email} placeholder="email">
-    <button onclick={LetsRsvp}>→</button>
+    <button onclick={LetsRsvp}>SIGN UP</button>
 </div>
